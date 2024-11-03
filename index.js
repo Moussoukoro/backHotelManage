@@ -10,7 +10,7 @@ const app = express();
 
 // Configuration CORS détaillée
 const corsOptions = {
-  origin: FRONTEND_URL,
+  origin: process.env.FRONTEND_URL,
   credentials: true, // Permettre l'envoi de cookies
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
