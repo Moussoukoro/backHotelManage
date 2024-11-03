@@ -10,7 +10,7 @@ const app = express();
 
 // Configuration CORS détaillée
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: FRONTEND_URL,
   credentials: true, // Permettre l'envoi de cookies
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
@@ -105,8 +105,8 @@ app.listen(PORT, () => {
   console.log(`
 🏨 API de Gestion Hôtelière
 --------------------------
-🚀 Serveur démarré sur: https://backhotelmanage-3.onrender.com:${PORT}
-📝 API Documentation: https://backhotelmanage-3.onrender.com:${PORT}/api
+🚀 Serveur démarré sur: https://backhotelmanage-4.onrender.com:${PORT}
+📝 API Documentation: https://backhotelmanage-4.onrender.com${PORT}/api
 ⚡ Environnement: ${process.env.NODE_ENV || 'development'}
   `);
 });
