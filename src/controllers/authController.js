@@ -176,8 +176,7 @@ exports.forgotPassword = async (req, res) => {
 
     // const resetURL = `${req.protocol}://${req.get('host')}/resetmotdepass/${resetToken}`;
     // Remplace 'http://ton-domaine-frontend.com' par l'URL de ton application frontend
-    const resetURL = `${process.env.FRONTEND_URL}/resetPass?token=${resetToken}`;
-
+const resetURL = `https://hotelmanagement-15.onrender.com/resetPass?token=${resetToken}`;
 
 
     await sendEmail({
